@@ -1,0 +1,154 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  background-color: #b9d3ed;
+  justify-content: space-between;
+  height: calc(474px - 90px);
+  width: calc(100% - 90px);
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer__contacts-item {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+}
+
+.footer__contacts-title {
+  font-size: 25px;
+  color: #4c7298;
+}
+
+.footer__contacts-text {
+  font-size: 25px;
+  color: #4c7298;
+}
+
+.footer__etc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__logo {
+  background-image: url("/images/logoIcon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 60px;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer__trademark {
+  background-image: url("/images/trademarkImage.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+}
+
+.footer__copyright-text {
+  font-size: 25px;
+  color: #4c7298;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 910px) {
+  .footer__contacts {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 28px 50px;
+    width: calc(100% - 100px);
+    height: auto;
+  }
+
+  .footer__contacts {
+    gap: 30px;
+    margin-bottom: 103px;
+  }
+
+  .footer__contacts-item {
+    gap: 12px;
+  }
+
+  .footer__etc {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer__contacts-title {
+    font-size: 15px;
+  }
+
+  .footer__contacts-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 26px 20px 12px;
+    width: calc(100% - 40px);
+    height: calc(658px - 38px);
+  }
+
+  .footer__contacts {
+    gap: 33px;
+  }
+
+  .footer__contacts-item {
+    gap: 6px;
+  }
+
+  .footer__contacts-title {
+    font-size: 20px;
+  }
+
+  .footer__contacts-text {
+    font-size: 18px;
+  }
+
+  .footer__etc {
+    gap: 5px;
+  }
+
+  .footer__logo {
+    width: 80px;
+    height: 50px;
+  }
+
+  .footer__copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__trademark {
+    font-size: 35px;
+  }
+
+  .footer__copyright-text {
+    font-size: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,130 @@
+.events {
+  display: flex;
+  flex-direction: column;
+  padding: 77px 35px 124px;
+}
+
+.events__title {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #648ab0;
+  letter-spacing: 3px;
+}
+
+.events__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.events__card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: #b9d3ed;
+  height: 600px;
+  border-radius: 20px;
+  padding: 25px 10px;
+  position: relative;
+}
+
+.events__card-title {
+  font-size: 40px;
+  text-align: center;
+  color: #27425e;
+  letter-spacing: 5px;
+}
+
+.events__card-text {
+  font-size: 25px;
+  color: #27435e;
+}
+
+.events__card-price {
+  position: absolute;
+  bottom: 22px;
+  text-align: center;
+  width: calc(100% - 20px);
+  font-size: 27px;
+  color: #365574;
+}
+
+@media screen and (max-width: 1240px) {
+  .events__card-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .events {
+    align-items: center;
+  }
+
+  .events__container {
+    grid-template-columns: 1fr;
+    width: 421px;
+  }
+
+  .events__title {
+    font-size: 30px;
+    margin-bottom: 57px;
+  }
+
+  .events__card {
+    gap: 21px;
+    height: calc(543px - 47px);
+  }
+
+  .events__card-text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .events {
+    padding: 77px 0 124px;
+  }
+
+  .events__container {
+    width: 300px;
+  }
+
+  .events__card-text {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .events {
+    padding: 40px 18px 93px;
+  }
+
+  .events__title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 34px;
+  }
+
+  .events__container {
+    gap: 40px;
+  }
+
+  .events__card {
+    padding: 17px 13px 15px;
+    width: calc(230px - 26px);
+    height: calc(390px - 32px);
+    margin: 0 auto;
+    gap: 5px;
+  }
+
+  .events__card-title {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  .events__card-price {
+    font-size: 18px;
+    width: calc(100% - 26px);
+  }
+}

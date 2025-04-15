@@ -1,0 +1,163 @@
+.application {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1440px;
+  width: 100%;
+  height: 528px;
+  background-image: url("/images/applicationImage.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 84px;
+
+  align-items: center;
+}
+
+.application__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #53779a;
+  color: #fff;
+  width: 100%;
+  height: 107px;
+  font-size: 45px;
+  text-align: center;
+  margin: 83px 0 113px;
+  letter-spacing: 4px;
+}
+
+.application__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 110px;
+  width: calc(100% - 220px);
+}
+
+.application__input {
+  width: 700px;
+  background-color: transparent;
+  border: 4px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+
+.application__input::placeholder {
+  color: #fff;
+}
+
+.application__button {
+  width: 405px;
+  height: 67px;
+  background-color: #537da6;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 40px;
+  margin: auto 0;
+  letter-spacing: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+  .application__form {
+    padding: 0 50px;
+    height: 70px;
+  }
+
+  .application__input {
+    width: 500px;
+    font-size: 30px;
+  }
+
+  .application__button {
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .application {
+    height: 539px;
+    background-image: url("/images/applicationImage2.png");
+    margin-bottom: 40px;
+  }
+
+  .application__title {
+    font-size: 40px;
+    height: 97px;
+    margin-bottom: 38px;
+  }
+
+  .application__form {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .application__input {
+    width: 600px;
+    height: 93px;
+    font-size: 40px;
+    margin-bottom: 105px;
+  }
+
+  .application__button {
+    width: 405px;
+    height: 67px;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .application__title {
+    font-size: 20px;
+    height: 67px;
+    margin-bottom: 38px;
+  }
+
+  .application__input {
+    width: 300px;
+    height: 63px;
+    font-size: 20px;
+    margin-bottom: 45px;
+  }
+
+  .application__button {
+    width: 205px;
+    height: 47px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .application {
+    height: 400px;
+    background-image: url('/images/applicationImage3.png');
+    margin-bottom: 84px;
+  }
+
+  .application__title {
+    margin: 68px 0 33px;
+    height: 90px;
+    letter-spacing: 3px;
+  }
+
+  .application__form {
+    height: 170px;
+  }
+
+  .application__input {
+    height: 54px;
+  }
+
+  .application__button {
+    width: 262px;
+    height: 42px;
+  }
+}
